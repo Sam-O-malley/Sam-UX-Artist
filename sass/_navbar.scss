@@ -1,0 +1,188 @@
+
+
+.navBarContainer{
+	padding-left: 5%;
+	 margin-top: 3%;
+  width:100%; 
+	display: flex;
+	font-family: sans-serif;
+
+}
+
+.navBarContainer:hover{
+	cursor:pointer;
+}
+
+#panel {
+  display: none;
+  height: 80vh;
+  width: 100vh;
+  // background-color: lightgrey;
+  /* position: absolute; */
+  opacity: 0.4;
+  /* text-align: center; */
+  padding-top: 3vh;
+  padding-left: 5%;
+}
+
+a, p{
+	color: black;
+	font-family: 'M PLUS 1p', sans-serif , bold;
+	font-size:25px;
+	text-decoration: none !important; 
+  text-decoration-color: none !important;
+
+}
+
+a {
+    color: black !important;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+
+
+
+
+// animation is slow so you can see it, but probably should be .25 or .15
+$thetransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+
+a{
+  text-decoration: none;
+  position: relative;
+
+
+/*
+  webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+*/
+
+  &:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: $thetransition;
+  transition: $thetransition;
+  }
+  &:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  }
+
+}
+
+
+.carousel-control-prev {
+    height: 1000px;
+    width: 18%;
+    left: 7%;
+}
+
+
+.carousel-control-next{
+	height: 1000px;
+	width: 23%;
+}
+
+
+.carousel-control-prev:hover{
+	cursor: w-resize;
+	size:20px;
+}
+
+.carousel-control-next:hover{
+cursor: e-resize;
+}
+
+#collapseTwo_panel{
+	display: none;
+}
+
+
+#collapseInnerOne{
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+
+
+#collapseInnerTwo{
+	padding-top: 2%;
+	padding-bottom: 5%;
+  margin-right:20%;
+}
+
+
+.accordion-toggle{
+	padding-top: 2%;
+}
+
+#accordion2{
+	padding-top: 2%
+}
+
+#Date_2017{
+	padding-top: 2%
+}
+#flip{
+	padding-right: 2%;
+}
+
+
+.accordion-heading{
+  padding-bottom: 2%;
+}
+
+
+@media (min-width:320px) and (max-width: 568px) {
+
+.navBarContainer{
+  padding-top: 5%;
+  width:100%; 
+  font-family: sans-serif;
+
+}
+
+#panel {
+    display: none;
+    height: 500px;
+    width: 60%;
+    background-color: white;
+    position: flex;
+    opacity: 0.4;
+    text-align: center;
+    padding-top: 1%;
+}
+
+a, p {
+    color: black;
+    font-family: 'M PLUS 1p', sans-serif , bold;
+    font-size: 20px;
+    text-decoration: none !important;
+    text-decoration-color: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
