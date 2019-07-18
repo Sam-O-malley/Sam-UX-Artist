@@ -307,10 +307,15 @@ a:hover:before {
 
 #castlehill-img {
   height: 300px;
+  margin-top: 3%;
 }
 
 .cv {
   height: 120vh;
+}
+
+.fuckyou {
+  height: 450px;
 }
 
 #cellphoneScale {
