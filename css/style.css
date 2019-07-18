@@ -24,10 +24,11 @@
 /*about page*/
 #AboutContentTwo {
   font-size: 20px;
-  height: 400px;
+  height: 400vh;
   width: 50%;
   padding-top: 2%;
   left: 50px;
+  overflow: none;
 }
 
 /*SeriesOnePage*/
@@ -302,6 +303,14 @@ a:hover:before {
   text-align: center;
   top: 30vh;
   padding-left: 5%;
+}
+
+#castlehill-img {
+  height: 300px;
+}
+
+.cv {
+  height: 120vh;
 }
 
 #cellphoneScale {
